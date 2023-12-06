@@ -32,3 +32,7 @@ accordingly.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+
+## Runtime Analysis
+The worst-case big $\Theta$ complexity of my implementation would be v + n. This is because my implementation can at most go over every vertice twice minus one, and we have to travel over and mark every node at least once. This is because it can't travel back to a node it's already visited, except when backtracking. The only node it will travel to once will be the ending node. So the complexity would be 2v-1+2n-3, but after getting rid of constants we get v + n as the big $\Theta$ complexity.
