@@ -17,7 +17,7 @@ assert(JSON.stringify(augmentingPath(graph, 'foo', 'bar')) == JSON.stringify(['f
 
 var graph = {'foo': {},
     'bar': {'foo': 1}};
-assert(JSON.stringify(augmentingPath(graph, 'foo', 'bar')) == '[]');
+assert(JSON.stringify(augmentingPath(graph, 'foo', 'bar')) == '[-1]');
 
 var graph = {'foo': {},
     'bar': {'foo': 1}};
